@@ -63,6 +63,8 @@ namespace batteryreport
             double result2_double = Convert.ToDouble(result2);
             double result_double = (result1_double - result2_double) / result1_double;
             dataGridView1.Rows[0].Cells[3].Value = result_double.ToString("P");
+            double result_ronsliang=1- result_double;
+            dataGridView1.Rows[0].Cells[4].Value = result_ronsliang.ToString("P");
         }
 
 
